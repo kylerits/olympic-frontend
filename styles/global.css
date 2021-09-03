@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.show-on-hover {
+	opacity: 0;
+	transition: all 200ms;
+}
+
+.content__item:hover .show-on-hover {
+	opacity: 1;
+}
